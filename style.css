@@ -1,0 +1,155 @@
+
+  
+  /*reset the page*/
+  body{
+      font-size: 1.125rem;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+      text-rendering: optimizeSpeed;
+      line-height: 1.5;
+      text-align: center;
+      font-family: var(--ff-primary);
+  }
+  
+  *, *:before, *:after {
+      box-sizing: border-box;
+    }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul,
+  ol,
+  li {
+      margin: 0;
+      padding: 0;
+      line-height: 1.5rem;
+      
+  }
+  
+  a:link, a:visited, a:active {
+    text-decoration:none;
+  }
+  
+  li,
+  ul,
+  ol {
+    list-style: none;
+    
+  }
+  
+  img {
+      max-width: 100%;
+      
+    }
+  
+  input,
+  button,
+  textarea,
+  select {
+      font: inherit;
+    }
+
+
+    /*title of page*/
+    #navbar{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar_title-container{
+      background-color: orange;
+      max-height: 15rem;
+      width: 100%;
+    }
+
+    .navbar_title{
+      font-size:160%;
+      padding: .5rem 0;
+      line-height: 1.8rem;
+    }
+
+    .navbar_container{
+      overflow: scroll;
+      width: 15.8rem;
+      height: 10rem;
+      background-color: rgba(255, 166, 0, 0.774);
+      color: #000;
+      border: .1rem solid #000;
+      cursor: pointer;
+    }
+
+    .navbar_container li{
+      border: .1rem solid rgba(0, 0, 0, 0.534);
+      width: 100%;
+      
+    }
+
+    .navbar_container li:hover{
+      background-color: orange;
+    }
+
+    .nav-link{
+      color: #000;
+      display: block;
+    }
+
+    /*main text*/
+    /*all titles*/
+    .title{
+      text-align: left;
+    }
+    /*all sections*/
+    .main-section{
+      margin: 4rem 0;
+    }
+
+    /*center all text*/
+    #main-doc{
+      padding: 0 .8rem;
+    }
+
+    article{
+      margin-top: 2rem;
+    }
+
+    p{
+      margin-bottom: 1rem;
+    }
+
+    .reference_text{
+      margin-top: 2rem;
+    }
+
+    /*media query*/
+
+    @media(min-width: 48rem){
+      body{
+        display: grid;
+        grid-template-columns: 27rem 2fr;
+      }
+      aside{
+        grid-column: 1/2;
+      }
+      #main-doc{
+        grid-column: 2/3;
+      }
+
+      .navbar_container{
+        overflow:visible;
+        width: 27rem;
+        height: 20rem;
+        
+      }
+  
+      .navbar_container li {
+        height: 2rem;
+      }
+  
+     
+
+      
+    }
